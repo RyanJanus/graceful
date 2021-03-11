@@ -1,7 +1,7 @@
 @import "common/foundation/variables";
 
 h3 {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 input,
@@ -18,12 +18,11 @@ img.avatar {
 }
 
 .d-header {
-  height: 70px;
-  background: rgba(var(--gf-header-bg-rgb), 0.92);
+  background: rgba($header_background, 0.92);
   box-shadow: 0 3px 3px rgba(100, 100, 100, 0.13);
   .panel {
-    padding: 6px 0 0 0;
-    flex: 0 0 auto;
+	padding: 6px 0 0 0;
+	flex: 0 0 auto;
   }
   button {
     &.login-button,
@@ -50,7 +49,8 @@ img.avatar {
     right: 85px;
   }
   #site-logo {
-    max-height: 35px !important;
+    height: 95px !important;
+    padding: 0 0 0 45px;
   }
 }
 
