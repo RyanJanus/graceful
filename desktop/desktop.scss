@@ -18,7 +18,7 @@ img.avatar {
 }
 
 .d-header {
-  background: rgba($header_background, 0.92);
+  background: rgba(var(--gf-header-bg-rgb), 0.92);
   box-shadow: 0 3px 3px rgba(100, 100, 100, 0.13);
   .panel {
 	padding: 6px 0 0 0;
@@ -42,7 +42,7 @@ img.avatar {
     .unread-notifications {
       padding: 4px 6px;
       top: 0;
-      background: $tertiary;
+      background: var(--tertiary);
     }
   }
   .icons .flagged-posts {
@@ -74,7 +74,7 @@ img.avatar {
 }
 
 ol.category-breadcrumb {
-  border-right: 1px solid $primary-medium;
+  border-right: 1px solid var(--primary-medium);
   padding-right: 10px;
   margin-right: 1em;
 
@@ -93,7 +93,7 @@ ol.category-breadcrumb {
 }
 .nav-pills > li.active > a,
 .nav-pills > li > a.active {
-  color: $tertiary;
+  color: var(--tertiary);
   background: transparent !important;
 }
 
@@ -112,15 +112,15 @@ nav.post-controls {
         &:last-of-type {
           border-radius: 0 4px 4px 0;
         }
-        background: $tertiary-low;
-        color: $tertiary;
+        background: var(--tertiary-low);
+        color: var(--tertiary);
       }
     }
   }
   button:focus,
   button.d-hover {
-    background: $tertiary-low;
-    color: $tertiary;
+    background: var(--tertiary-low);
+    color: var(--tertiary);
   }
 }
 
@@ -131,8 +131,8 @@ nav.post-controls {
   .sortable:hover {
     // sortable column headers
     border-radius: 4px 4px 0 0;
-    background: $tertiary-low;
-    color: $tertiary;
+    background: var(--tertiary-low);
+    color: var(--tertiary);
   }
 }
 
@@ -145,7 +145,7 @@ nav.post-controls {
 }
 
 #user-card {
-  background: rgba($secondary, 0.95);
+  background: var(--secondary);
   border-radius: 4px;
 }
 
@@ -157,10 +157,10 @@ nav.post-controls {
 .timeline-container .topic-timeline {
   margin-top: 20px;
   .timeline-scrollarea {
-    border-color: $primary-low;
+    border-color: var(--primary-low);
   }
   .timeline-handle {
-    background: $tertiary;
+    background: var(--tertiary);
   }
 }
 
@@ -196,6 +196,12 @@ nav.post-controls {
 
 .modal-tab {
   width: 90%;
+}
+
+@media screen and (min-width: 550px) {
+  .modal.edit-category-modal .modal-inner-container {
+    min-width: 550px;
+  }
 }
 
 @media screen and (max-width: 890px) {
